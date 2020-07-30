@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FB1FDF-2090-4EE9-B088-4A8CFCC12714}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Forms_Diego_08</RootNamespace>
+    <AssemblyName>Forms Diego 08</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Diego\Estudo\CTI\2°ano\C# - Bicudo\caditoApps\Cálculo de Determinante\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>21CA4C9FDF2F387CF8F39839944894CC09A46C22</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Matriz_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDedos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDedos.Designer.cs">
+      <DependentUpon>frmDedos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoDedos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoDedos.Designer.cs">
+      <DependentUpon>frmInfoDedos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntroDedos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntroDedos.Designer.cs">
+      <DependentUpon>frmIntroDedos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatriz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatriz.Designer.cs">
+      <DependentUpon>frmMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultadoVencedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoVencedor.Designer.cs">
+      <DependentUpon>frmResultadoVencedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultadoPerdedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoPerdedor.Designer.cs">
+      <DependentUpon>frmResultadoPerdedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDedos.resx">
+      <DependentUpon>frmDedos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoDedos.resx">
+      <DependentUpon>frmInfoDedos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntroDedos.resx">
+      <DependentUpon>frmIntroDedos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatriz.resx">
+      <DependentUpon>frmMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoVencedor.resx">
+      <DependentUpon>frmResultadoVencedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoPerdedor.resx">
+      <DependentUpon>frmResultadoPerdedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Matriz_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matriz_organizacao-300x223.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chave esq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chave dir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anotação 2020-04-06 101056.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sarrus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicudo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diego.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitao1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicudo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicudo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coroa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-person-computer-icons-question-mark-portable-netwo-5d0ee9ed8a09b7.9577084615612584775654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_unknown_55168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown-avatar-icon-21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
